@@ -1,0 +1,5 @@
+
+        let tokenUser = await jwt.createJWT(resultnlogin.id)
+        resultnlogin.token = tokenUser
+
+        const jwt = require ('../middleware/middlewareJWT.js')
