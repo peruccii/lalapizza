@@ -9,7 +9,7 @@ const listarServico = async function(){
     const dados = await service.selectAllServicos()
     
     if (dados) {
-        servicoJSON.Servicos = dados
+        servicoJSON.servicos = dados
         servicoJSON.status = 200
     } else{
         servicoJSON.message = MESSAGE_ERROR.NOT_FOUND_DB
